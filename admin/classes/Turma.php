@@ -5,6 +5,13 @@ class Turma
 	public $descTurma;
 	public $ano;
 
+	public function __construct($id = false)
+	{
+		if (isset($id)){
+			$this->id = $id;
+		}
+	}
+
 	public function listar()
 	{
 		$sql = "SELECT * FROM turmas";
@@ -24,4 +31,10 @@ class Turma
 		$conexao->exec($sql);
 	}
 
+	public function excluir()
+	{
+		$sql = "DELETE FROM turmas WHERE id=".$this->id;
+		$conexao = new PDO('mysql:host=127.0.0.1;dbname=escolar','root','');
+		$conexao->exec($sql);
+	}
 }

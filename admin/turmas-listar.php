@@ -36,7 +36,7 @@
             <td><?php echo $linha['descTurma'] ?></td>
             <td><?php echo $linha['ano'] ?></td>
             <td>
-              <a href="#"
+              <a href="turmas-excluir.php?id=<?php echo $linha['id'] ?>"
                  class="btn btn-sm btn-danger">Excluir</a>
             </td>
           </tr>
