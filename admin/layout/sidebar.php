@@ -1,7 +1,7 @@
 <nav class="col-md-2 bg-light sidebar py-2">
   <ul class="nav flex-column">             
     <li class="nav-item">
-      <a class="nav-link" href="#">
+      <a class="nav-link" href="alunos-listar.php">
         <span data-feather="users"></span>
         Alunos
       </a>
